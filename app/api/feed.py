@@ -1,4 +1,4 @@
-from flask import Blueprint, request
+from flask import Blueprint
 from app.services.feed_service import feed_list
 
 feed_route = Blueprint('feed_route', __name__)
