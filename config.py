@@ -10,7 +10,7 @@ class TestingConfig(BaseConfig):
 
 class DevelopmentConfig(BaseConfig):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///dev.db'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:password@127.0.0.1:5432/flask_db'
 
 class ProductionConfig(BaseConfig):
     DEBUG = False
