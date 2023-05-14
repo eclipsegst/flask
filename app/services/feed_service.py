@@ -1,5 +1,5 @@
 from flask import make_response, jsonify
-from app.models import Feed
+from app.models.feed import Feed
 
 def feed_list():
     feeds = Feed.query.all()

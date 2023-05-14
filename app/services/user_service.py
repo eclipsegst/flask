@@ -1,5 +1,5 @@
 from flask import abort, jsonify, g, url_for
-from app.models import User
+from app.models.user import User
 from app import db
 
 def new_user(request):

@@ -1,1 +1,1 @@
-from app.api import feed
+from app.api import auth, feed, user
