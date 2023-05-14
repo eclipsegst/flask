@@ -3,7 +3,6 @@ from flask import Flask
 from flask_restful import Api
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-from flask_httpauth import HTTPBasicAuth
 from flask_jwt_extended import JWTManager
 from datetime import timedelta
 
@@ -11,7 +10,6 @@ from config import DevelopmentConfig, ProductionConfig, TestingConfig
 
 db = SQLAlchemy()
 migrate = Migrate()
-auth = HTTPBasicAuth()
 jwt = JWTManager()
 
 def create_app():
